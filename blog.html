@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAPSION</title>
+    <link rel="stylesheet" href="styles.css" />  
+
+    <style>
+        body {
+          background-color: #fff8f0;
+          font-family: 'Segoe UI', sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+    
+        .blog-container {
+          max-width: 1100px;
+          margin: auto;
+          padding: 40px 20px;
+        }
+    
+        .blog-header {
+          text-align: center;
+          margin-bottom: 40px;
+        }
+    
+        .blog-header h1 {
+          font-size: 2.5rem;
+          color: #c0392b;
+        }
+    
+        .blog-header p {
+          color: #555;
+          font-size: 1.1rem;
+        }
+    
+        .blog-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          gap: 30px;
+        }
+    
+        .blog-card {
+          background-color: #ffffff;
+          border-radius: 15px;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+          overflow: hidden;
+          transition: transform 0.3s;
+        }
+    
+        .blog-card:hover {
+          transform: translateY(-8px);
+        }
+    
+        .blog-card img {
+          width: 100%;
+          height: 180px;
+          object-fit: cover;
+        }
+    
+        .blog-content {
+          padding: 20px;
+        }
+    
+        .blog-content h3 {
+          margin-top: 0;
+          color: #e74c3c;
+        }
+    
+        .blog-content p {
+          color: #333;
+          font-size: 0.95rem;
+          margin: 10px 0 20px;
+        }
+    
+        .blog-content a {
+          display: inline-block;
+          background-color: #e74c3c;
+          color: white;
+          padding: 10px 16px;
+          text-decoration: none;
+          border-radius: 6px;
+          transition: background-color 0.3s;
+        }
+    
+        .blog-content a:hover {
+          background-color: #c0392b;
+        }
+    
+        @media screen and (max-width: 600px) {
+          .blog-header h1 {
+            font-size: 2rem;
+          }
+        }
+      </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+          <div class="logo">MAPSION</div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+      </header>
+
+  <section class="blog-container">
+    <div class="blog-header">
+      <h1>Our Food Blog</h1>
+      <p>Discover stories, recipes, and chef insights behind your favorite dishes.</p>
+    </div>
+
+    <div class="blog-grid">
+      <div class="blog-card">
+        <img src="images/biryani recipe.jpeg" alt="Blog Post 1" />
+        <div class="blog-content">
+          <h3>Secrets of the Perfect Biryani</h3>
+          <p>Uncover the step-by-step secrets that make our biryani irresistible and full of rich, traditional flavors.</p>
+          <a href="blog1.html">Read More</a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <img src="images/fresh ingridients.jpeg" alt="Blog Post 2" />
+        <div class="blog-content">
+          <h3>How We Source Fresh Ingredients</h3>
+          <p>Learn how our farm-to-table approach guarantees freshness and quality in every dish we serve.</p>
+          <a href="blog2.html">Read More</a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <img src="images/weekly special.jpeg" alt="Blog Post 3" />
+        <div class="blog-content">
+          <h3>Chef's Special: Weekly Picks</h3>
+          <p>Our head chef reveals the inspiration behind this week's featured dishes and seasonal favorites.</p>
+          <a href="blog3.html">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>Follow us on</p>
+      <div class="social-icons">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" /></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" /></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="Twitter" /></a>
+      </div>      
+      <p>&copy; 2025 MAPSION. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

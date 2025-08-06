@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MAPSION | Reservation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">MAPSION</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="reservation-container">
+    <h2>Book a Table</h2>
+
+    <form id="reservationForm"><br><br>
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="tel" id="phone" placeholder="Phone Number" required />
+      <input type="email" id="email" placeholder="Email Address" required />
+      <input type="date" id="date" required />
+      <input type="time" id="time" required />
+      <input type="number" id="persons" placeholder="Number of Persons" min="1" required />
+      
+      <select id="table" required onchange="updateAmount()">
+        <option value="" disabled selected>Select Table</option>
+        <script>
+          for (let i = 1; i <= 22; i++) {
+            let capacity;
+            if (i <= 10) {
+              capacity = 4;
+            } else if (i <= 17) {
+              capacity = 6;
+            } else {
+              capacity = 10;
+            }
+            document.write(`<option value="${i}" data-capacity="${capacity}">Table ${i} (Seats: ${capacity})</option>`);
+          }
+        </script>
+      </select>
+
+      <input type="text" id="amount" placeholder="Amount" name="amount" readonly />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="confirmationCard" class="hidden">
+      <h3>Reservation Details</h3><br><br>
+      <p><strong>Name:</strong> <span id="confName"></span></p><br>
+      <p><strong>Phone:</strong> <span id="confPhone"></span></p><br>
+      <p><strong>Email:</strong> <span id="confEmail"></span></p><br>
+      <p><strong>Date:</strong> <span id="confDate"></span></p><br>
+      <p><strong>Time:</strong> <span id="confTime"></span></p><br>
+      <p><strong>Persons:</strong> <span id="confPersons"></span></p><br>
+      <p><strong>Table:</strong> <span id="confTable"></span></p><br>
+      <p><strong>Amount:</strong> <span id="reserve"></span></p><br><br>
+      <button id="confirmBtn">Confirm</button>
+      <button id="editBtn">Edit</button>
+    </div>
+
+    <div id="successMessage" class="hidden">
+      <marquee behavior="scroll" direction="left">🎉 Booking Successful 🎉</marquee>
+    </div>
+
+    <p class="warning">⚠️ Reservation can be cancelled only till a day before but not on the day of reservation. Only 40% of the paid amount will be refunded.</p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>Follow us on</p>
+      <div class="social-icons">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" /></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" /></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="Twitter" /></a>
+      </div>      
+      <p>&copy; 2025 MAPSION. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="reservation.js"></script>
+</body>
+</html>

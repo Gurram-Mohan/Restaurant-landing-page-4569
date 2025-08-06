@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAPSION | Menu</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">MAPSION</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Menu Section -->
+  <section class="menu-section">
+    <h2 class="section-title">Our Menu</h2>
+
+    <div class="menu-filters">
+      <button class="filter-btn active" onclick="filterMenu('all')">All</button>
+      <button class="filter-btn" onclick="filterMenu('veg')">Vegetarian</button>
+      <button class="filter-btn" onclick="filterMenu('non-veg')">Non-Vegetarian</button>
+      <button class="filter-btn" onclick="filterMenu('special')">Specials</button>
+    </div>
+
+    <div class="menu-container" id="menuItems">
+        <!-- Vegetarian Items -->
+        <div class="menu-item veg">
+          <img src="images/paneer tikka.jpeg">
+          <h3>Paneer Tikka</h3>
+          <p>₹220</p>
+          <span class="tag green">Veg</span>
+        </div>
+      
+        <div class="menu-item veg">
+          <img src="images/veg thali.jpeg">
+          <h3>Veg Thali</h3>
+          <p>₹200</p>
+          <span class="tag green">Veg</span>
+        </div>
+      
+        <div class="menu-item veg">
+          <img src="images/dal makhani.jpeg">
+          <h3>Dal Makhani</h3>
+          <p>₹180</p>
+          <span class="tag green">Veg</span>
+        </div>
+      
+        <div class="menu-item veg">
+          <img src="images/aaloo paratha.jpeg">
+          <h3>Aloo Paratha</h3>
+          <p>₹90</p>
+          <span class="tag green">Veg</span>
+        </div>
+      
+        <div class="menu-item veg">
+          <img src="images/idli.jpeg">
+          <h3>Steamed Idli</h3>
+          <p>₹60</p>
+          <span class="tag green">Veg</span>
+        </div>
+      
+        <div class="menu-item veg">
+          <img src="images/dosa.jpeg">
+          <h3>Masala Dosa</h3>
+          <p>₹100</p>
+          <span class="tag green">Veg</span>
+        </div>
+      
+        <div class="menu-item veg">
+          <img src="images/veg biryani.jpeg">
+          <h3>Veg Biryani</h3>
+          <p>₹160</p>
+          <span class="tag green">Veg</span>
+        </div>
+      
+        <div class="menu-item veg">
+          <img src="images/pav bhaji.jpeg">
+          <h3>Pav Bhaji</h3>
+          <p>₹120</p>
+          <span class="tag green">Veg</span>
+        </div>
+      
+        <div class="menu-item veg">
+          <img src="images/kanda poha.jpeg">
+          <h3>Kanda Poha</h3>
+          <p>₹80</p>
+          <span class="tag green">Veg</span>
+        </div>
+      
+        <div class="menu-item veg">
+          <img src="images/chole.jpeg">
+          <h3>Chole Bhature</h3>
+          <p>₹150</p>
+          <span class="tag green">Veg</span>
+        </div>
+      
+        <!-- Non-Veg Items -->
+        <div class="menu-item non-veg">
+          <img src="images/chicken biryani.jpeg">
+          <h3>Chicken Biryani</h3>
+          <p>₹260</p>
+          <span class="tag red">Non-Veg</span>
+        </div>
+      
+        <div class="menu-item non-veg">
+          <img src="images/butter chicken.jpeg">
+          <h3>Butter Chicken</h3>
+          <p>₹280</p>
+          <span class="tag red">Non-Veg</span>
+        </div>
+      
+        <div class="menu-item non-veg">
+          <img src="images/mutton curry.jpeg">
+          <h3>Mutton Curry</h3>
+          <p>₹340</p>
+          <span class="tag red">Non-Veg</span>
+        </div>
+      
+        <div class="menu-item non-veg">
+          <img src="images/egg curry.jpeg">
+          <h3>Egg Curry</h3>
+          <p>₹150</p>
+          <span class="tag red">Non-Veg</span>
+        </div>
+      
+        <div class="menu-item non-veg">
+          <img src="images/fish fry.jpeg">
+          <h3>Fish Fry</h3>
+          <p>₹230</p>
+          <span class="tag red">Non-Veg</span>
+        </div>
+      
+        <div class="menu-item non-veg">
+          <img src="images/grilled chicken.jpeg">
+          <h3>Grilled Chicken</h3>
+          <p>₹310</p>
+          <span class="tag red">Non-Veg</span>
+        </div>
+      
+        <div class="menu-item non-veg">
+          <img src="images/chicken lollipop.jpeg">
+          <h3>Chicken Lollipop</h3>
+          <p>₹190</p>
+          <span class="tag red">Non-Veg</span>
+        </div>
+      
+        <div class="menu-item non-veg">
+          <img src="images/chicken tikka.jpeg">
+          <h3>Chicken Tikka</h3>
+          <p>₹240</p>
+          <span class="tag red">Non-Veg</span>
+        </div>
+      
+        <div class="menu-item non-veg">
+          <img src="images/tandoori chicken.jpeg">
+          <h3>Tandoori Chicken</h3>
+          <p>₹270</p>
+          <span class="tag red">Non-Veg</span>
+        </div>
+      
+        <div class="menu-item non-veg">
+          <img src="images/shrimp curry.jpeg">
+          <h3>Shrimp Curry</h3>
+          <p>₹330</p>
+          <span class="tag red">Non-Veg</span>
+        </div>
+      
+        <!-- Special Items -->
+        <div class="menu-item special">
+          <img src="images/special pizza.jpeg">
+          <h3>Chef’s Special Pizza</h3>
+          <p>₹350</p>
+          <span class="tag gold">Special</span>
+        </div>
+      
+        <div class="menu-item special">
+          <img src="images/lasanga.jpeg">
+          <h3>Signature Lasagna</h3>
+          <p>₹370</p>
+          <span class="tag gold">Special</span>
+        </div>
+      
+        <div class="menu-item special">
+          <img src="images/pasta.jpeg">
+          <h3>Italian Pasta Bowl</h3>
+          <p>₹340</p>
+          <span class="tag gold">Special</span>
+        </div>
+      
+        <div class="menu-item special">
+          <img src="images/blueberry cake.jpeg">
+          <h3>Blueberry Cheesecake</h3>
+          <p>₹180</p>
+          <span class="tag gold">Special</span>
+        </div>
+      
+        <div class="menu-item special">
+          <img src="images/exhotic sushi.jpeg">
+          <h3>Exotic Sushi Platter</h3>
+          <p>₹420</p>
+          <span class="tag gold">Special</span>
+        </div>
+      
+        <div class="menu-item special">
+          <img src="images/noodle bowl.jpeg">
+          <h3>Asian Noodle Bowl</h3>
+          <p>₹250</p>
+          <span class="tag gold">Special</span>
+        </div>
+      
+        <div class="menu-item special">
+          <img src="images/chocolate dessert.jpeg">
+          <h3>Truffle Chocolate Dessert</h3>
+          <p>₹220</p>
+          <span class="tag gold">Special</span>
+        </div>
+      
+        <div class="menu-item special">
+          <img src="images/beef steak.jpeg">
+          <h3>Classic Beef Steak</h3>
+          <p>₹490</p>
+          <span class="tag gold">Special</span>
+        </div>
+      
+        <div class="menu-item special">
+          <img src="images/loaded double burger.jpeg">
+          <h3>Loaded Double Burger</h3>
+          <p>₹280</p>
+          <span class="tag gold">Special</span>
+        </div>
+      
+        <div class="menu-item special">
+          <img src="images/chef's fusion delight.jpeg">
+          <h3>Chef’s Fusion Delight</h3>
+          <p>₹400</p>
+          <span class="tag gold">Special</span>
+        </div>
+      </div>      
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>Follow us on</p>
+      <div class="social-icons">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" /></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" /></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="Twitter" /></a>
+      </div>
+      <p>&copy; 2025 MAPSION. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
